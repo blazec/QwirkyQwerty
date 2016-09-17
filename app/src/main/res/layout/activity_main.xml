@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="a steep learning curve in riding a unicycle"
+        android:id="@+id/text_phrase1"
+        android:textSize="16dp"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_input"
+        android:hint="Start typing here..."
+        android:width="200dp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:singleLine="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:id="@+id/num_errors"
+        android:textSize="24dp"
+        android:gravity="right"
+        android:textColor="@android:color/darker_gray"
+        android:layout_alignBottom="@+id/user_input"
+        android:layout_alignStart="@+id/label_errors"
+        android:visibility="invisible"/>
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chronometer"
+        android:textSize="24dp"
+        android:gravity="right"
+        android:textColor="@android:color/darker_gray"
+        android:visibility="invisible"
+        android:layout_above="@+id/user_input"
+        android:layout_alignEnd="@+id/button_end"
+        android:layout_marginBottom="48dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="TIME"
+        android:id="@+id/label_timer"
+        android:visibility="invisible"
+        android:layout_above="@+id/chronometer"
+        android:layout_toEndOf="@+id/num_errors"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="ERRORS"
+        android:id="@+id/label_errors"
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/chronometer"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="employee recruitment takes a lot of effort"
+        android:id="@+id/text_phrase2"
+        android:textSize="16dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/text_phrase1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="TYPE THE WORDS BELOW"
+        android:id="@+id/text_type_the_words_below"
+        android:textStyle="bold"
+        android:layout_above="@+id/text_phrase1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="91dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Current Keyboard: "
+        android:id="@+id/text_label_current_keyboard"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="KEYBOARD"
+        android:id="@+id/text_current_keyboard"
+        android:layout_toEndOf="@+id/text_label_current_keyboard"
+        android:layout_alignBottom="@+id/text_label_current_keyboard"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:id="@+id/button_reset"
+        android:textSize="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/button_end"
+        android:onClick="resetToInitialState"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="END"
+        android:id="@+id/button_end"
+        android:textSize="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/label_errors"
+        android:onClick="showResults"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0/15"
+        android:id="@+id/text_progress"
+        android:textSize="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="PROGRESS"
+        android:id="@+id/text_label_progress"
+        android:textSize="12dp"
+        android:layout_above="@+id/text_progress"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+    <!--tools:context="com.blaisecalaycay.qwirkyqwerty.MainActivity">-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Hello World!"/>-->
+<!--</RelativeLayout>-->

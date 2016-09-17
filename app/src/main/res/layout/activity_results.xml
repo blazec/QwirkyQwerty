@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:label="@string/activity_results_title"
+    tools:context="com.blaisecalaycay.qwirkyqwerty.ResultsActivity">
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:text="Errors: "-->
+        <!--android:id="@+id/label_errors"-->
+        <!--android:textSize="0dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignStart="@+id/text_label_num_fs"-->
+        <!--android:visibility="invisible"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:text="0"-->
+        <!--android:id="@+id/result_errors"-->
+        <!--android:layout_alignBottom="@+id/label_errors"-->
+        <!--android:layout_toEndOf="@+id/label_errors"-->
+        <!--android:textSize="0dp"-->
+        <!--android:visibility="invisible"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:text="Time: "-->
+        <!--android:id="@+id/label_time"-->
+        <!--android:layout_below="@+id/label_errors"-->
+        <!--android:layout_alignStart="@+id/label_errors"-->
+        <!--android:textSize="0dp"-->
+        <!--android:visibility="invisible"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:text="0 seconds"-->
+        <!--android:id="@+id/result_time"-->
+        <!--android:layout_alignTop="@+id/label_time"-->
+        <!--android:layout_toEndOf="@+id/label_errors"-->
+        <!--android:textSize="0dp"-->
+        <!--android:visibility="invisible"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:id="@+id/text_view_final_user_input"-->
+        <!--android:text="FINAL USER INPUT"-->
+        <!--android:textSize="0dp"-->
+        <!--android:layout_below="@+id/text_label_num_fs"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:visibility="invisible"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:text="F time:"-->
+        <!--android:id="@+id/text_label_f_time"-->
+        <!--android:layout_below="@+id/label_time"-->
+        <!--android:layout_alignStart="@+id/label_time"-->
+        <!--android:textSize="0dp"-->
+        <!--android:visibility="invisible"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:text="T time:"-->
+        <!--android:id="@+id/text_label_t_time"-->
+        <!--android:layout_below="@+id/text_label_f_time"-->
+        <!--android:layout_alignStart="@+id/text_label_f_time"-->
+        <!--android:textSize="0dp"-->
+        <!--android:visibility="invisible"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:text="0"-->
+        <!--android:id="@+id/text_f_time"-->
+        <!--android:layout_below="@+id/result_time"-->
+        <!--android:layout_alignStart="@+id/result_time"-->
+        <!--android:textSize="0dp"-->
+        <!--android:visibility="invisible"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:text="0"-->
+        <!--android:id="@+id/text_t_time"-->
+        <!--android:layout_below="@+id/text_f_time"-->
+        <!--android:layout_alignStart="@+id/text_f_time"-->
+        <!--android:textSize="0dp"-->
+        <!--android:visibility="invisible"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:text="Number of T&apos;s:"-->
+        <!--android:id="@+id/text_label_num_ts"-->
+        <!--android:textSize="0dp"-->
+        <!--android:layout_below="@+id/text_label_t_time"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:visibility="invisible"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:text="Number of F&apos;s:"-->
+        <!--android:id="@+id/text_label_num_fs"-->
+        <!--android:layout_below="@+id/text_label_num_ts"-->
+        <!--android:layout_alignEnd="@+id/text_label_num_ts"-->
+        <!--android:textSize="0dp"-->
+        <!--android:visibility="invisible"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:text="0"-->
+        <!--android:id="@+id/text_num_ts"-->
+        <!--android:textSize="0dp"-->
+        <!--android:layout_above="@+id/text_num_fs"-->
+        <!--android:layout_alignEnd="@+id/result_time"-->
+        <!--android:visibility="invisible"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:text="0"-->
+        <!--android:id="@+id/text_num_fs"-->
+        <!--android:textSize="0dp"-->
+        <!--android:layout_alignTop="@+id/text_label_num_fs"-->
+        <!--android:layout_alignStart="@+id/text_num_ts"-->
+        <!--android:visibility="invisible"/>-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEND DATA TO RESEARCHER EMAIL"
+        android:id="@+id/button_send_data"
+        android:background="#c1e1f7"
+        android:onClick="sendDataToEmail"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="If this was your first keyboard, hand the phone to the researchers and get ready to type using the second keyboard. If you are done with both keyboards, you are done typing for the day."
+        android:id="@+id/text_label_end_message"
+        android:layout_marginTop="154dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="GOOD JOB!"
+        android:id="@+id/text_label_good_job"
+        android:singleLine="false"
+        android:textStyle="bold"
+        android:layout_marginBottom="75dp"
+        android:layout_alignBottom="@+id/text_label_end_message"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/continue_typing"
+        android:id="@+id/link_start_second_keyboard"
+        android:textColor="#2885f0"
+        android:textSize="15dp"
+        android:layout_marginTop="54dp"
+        android:onClick="continueTyping"
+        android:layout_below="@+id/text_label_end_message"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/note_to_researchers_change_keyboard"
+        android:id="@+id/text_label_note_second"
+        android:layout_below="@+id/link_start_second_keyboard"
+        android:layout_centerHorizontal="true"
+        android:textSize="10dp"
+        android:gravity="center_horizontal"/>
+
+</RelativeLayout>

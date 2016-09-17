@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.blaisecalaycay.qwirkyqwerty.LoginActivity">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="START SESSION"
+        android:id="@+id/button_start"
+        android:background="#c1e1f7"
+        android:onClick="start"
+        android:nestedScrollingEnabled="true"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Pick participant&apos;s first keyboard"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/radio_group_keyboard_type">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qwerty"
+            android:id="@+id/radio_button_qwerty"
+            android:checked="false"
+            android:layout_below="@+id/textView"
+            android:layout_alignStart="@+id/textView"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QWIRKY Qwerty"
+            android:id="@+id/radio_button_qwirky"
+            android:layout_below="@+id/radio_button_qwerty"
+            android:layout_alignStart="@+id/radio_button_qwerty"
+            android:checked="false"/>
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edit_text_user_id"
+        android:gravity="center_horizontal"
+        android:hint="ENTER USER ID"
+        android:layout_marginBottom="59dp"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/note_to_researchers_first_keyboard"
+        android:id="@+id/text_label_note"
+        android:textSize="10dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/radio_group_keyboard_type"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

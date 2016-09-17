@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Qwirky Qwerty</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="my_keyboard">Qwirky Qwerty</string>
+    <string name="sybtype_en_US">English (US)</string>
+    <string name="activity_results_title">Results</string>
+    <string name="continue_typing"><u>CONTINUE TYPING WITH SECOND KEYBOARD</u></string>
+    <string name="note_to_researchers_first_keyboard">NOTE TO RESEARCHERS: \n Keyboard must be manually changed to reflect first keyboard</string>
+    <string name="note_to_researchers_change_keyboard">NOTE TO RESEARCHERS: \n Keyboard must be manually changed to the second keyboard</string>
+
+    <!-- Active Session Links -->
+    <string name="session_1_active">Session 1</string>
+    <string name="session_2_active">Session 2</string>
+    <string name="session_3_active">Session 3</string>
+    <string name="session_4_active">Session 4</string>
+    <string name="session_5_active">Session 5</string>
+    <string name="session_6_active">Session 6</string>
+    <string name="session_7_active">Session 7</string>
+    <string name="session_trial">Trial</string>
+
+    <!-- Inactive Session Links -->
+    <string name="session_8_inactive">Session 8</string>
+    <string name="session_9_inactive">Session 9</string>
+    <string name="session_10_inactive">Session 10</string>
+    <string name="session_11_inactive">Session 11</string>
+    <string name="session_12_inactive">Session 12</string>
+    <string name="session_13_inactive">Session 13</string>
+    <string name="session_14_inactive">Session 14</string>
+    <string name="session_15_inactive">Session 15</string>
+
+</resources>
